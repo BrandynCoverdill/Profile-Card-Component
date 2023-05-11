@@ -1,0 +1,108 @@
+/* Declaring root variables */
+
+:root {
+    --clr-primary-cyan: hsl(185, 75%, 39%);
+    --clr-primary-blue: hsl(229, 23%, 23%);;
+    --clr-primary-grayish: hsl(227, 10%, 46%);
+
+    --clr-neutral-gray: hsl(0, 0%, 59%);
+    --clr-neutral-lightgray: hsl(0, 0%, 90%);
+    --clr-neutral-white: #fff;
+
+    --ff-kumbh: 'Kumbh Sans', sans-serif;
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+/* General Styling */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--ff-kumbh);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    /* Adding background images */
+    background: url(../images/bg-pattern-top.svg) no-repeat top -31rem left -13rem, url(../images/bg-pattern-bottom.svg) no-repeat bottom -40rem right -14rem;
+    background-color: var(--clr-primary-cyan);
+}
+
+/* Profile Styling */
+
+.profile {
+    background-color: var(--clr-neutral-white);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.5rem;
+    width: 20.3rem;
+}
+
+.profile__icon {
+    position: absolute;
+    inset: 90px 0 0 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid var(--clr-neutral-white);
+}
+
+.profile__location {
+    text-align: center;
+    color: var(--clr-primary-grayish);
+    font-size: 0.9rem;
+    margin: .3rem 0;
+}
+
+/* Flex Items Styling */
+
+.flex-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile__name {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-blue);
+}
+
+.profile__age {
+    color: var(--clr-primary-grayish);
+}
+
+/* Horizontal Row Styling */
+
+hr {
+    background-color: var(--clr-neutral-lightgray);
+    height: 1px;
+    border: 0;
+    margin: 1.5rem 0;
+}
+
+/* Grid Items Styling */
+
+.grid-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 1rem;
+}
+
+.profile__number-stat {
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary-blue);
+    line-height: 1.2rem;
+}
+
+.profile__name-stat {
+    color: var(--clr-primary-grayish);
+    font-size: .6rem;
+    letter-spacing: 2px;
+}
