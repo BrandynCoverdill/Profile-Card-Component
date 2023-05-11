@@ -28,7 +28,7 @@ body {
     place-content: center;
     min-height: 100vh;
     /* Adding background images */
-    background: url(../images/bg-pattern-top.svg) no-repeat top -31rem left -13rem, url(../images/bg-pattern-bottom.svg) no-repeat bottom -40rem right -14rem;
+    background: url(../images/bg-pattern-top.svg) no-repeat right 52vh bottom 35vh, url(../images/bg-pattern-bottom.svg) no-repeat left 48vh top 52vh;
     background-color: var(--clr-primary-cyan);
 }
 
